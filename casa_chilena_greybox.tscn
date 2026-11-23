@@ -1,0 +1,818 @@
+[gd_scene format=3 uid="uid://br2rvmlfmri5w"]
+
+[ext_resource type="Script" uid="uid://hjbgtgsks2oa" path="res://casa_chilena_greybox.gd" id="1_bnup0"]
+[ext_resource type="ArrayMesh" uid="uid://ctwmils5xggxx" path="res://OBJ format/bedSingle.obj" id="2_jnmqt"]
+[ext_resource type="Script" uid="uid://dw3qgqkxnotnf" path="res://inspector_player.gd" id="3_syofv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bnup0"]
+albedo_color = Color(0.24, 0.42, 0.22, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8jx0w"]
+albedo_color = Color(0.52, 0.53, 0.55, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jnmqt"]
+albedo_color = Color(0.62, 0.45, 0.28, 1)
+roughness = 0.55
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_syofv"]
+albedo_color = Color(0.78, 0.8, 0.82, 1)
+roughness = 0.35
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pymx"]
+albedo_color = Color(0.64, 0.3, 0.22, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ifodh"]
+albedo_color = Color(0.9, 0.82, 0.68, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pmnlw"]
+albedo_color = Color(0.94, 0.94, 0.92, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nqpop"]
+albedo_color = Color(0.62, 0.7, 0.78, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x04bp"]
+albedo_color = Color(0.26, 0.29, 0.32, 1)
+roughness = 0.45
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x703t"]
+albedo_color = Color(0.36, 0.22, 0.12, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv507"]
+albedo_color = Color(0.55, 0.36, 0.2, 1)
+roughness = 0.5
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8w5jh"]
+points = PackedVector3Array(8.38, 0.15, 4.5, 9.78, 0.15, 4.5, 8.38, 0.05, 4.5, 9.78, 0.05, 4.5, 8.38, 3, 1.5, 9.78, 3, 1.5, 8.38, 2.88, 1.5, 9.78, 2.88, 1.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xannx"]
+transparency = 1
+albedo_color = Color(0.55, 0.78, 0.92, 0.28)
+roughness = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_en5md"]
+albedo_color = Color(0.15, 0.16, 0.18, 1)
+roughness = 0.4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vsp2p"]
+albedo_color = Color(0.32, 0.35, 0.4, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oyack"]
+albedo_color = Color(0.96, 0.97, 0.98, 1)
+roughness = 0.25
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_165kh"]
+albedo_color = Color(0.88, 0.42, 0.12, 1)
+roughness = 0.4
+
+[node name="CasaChilenaGreybox" type="Node3D" unique_id=1262727021]
+script = ExtResource("1_bnup0")
+
+[node name="01_PisosYLosas" type="CSGCombiner3D" parent="." unique_id=271377330]
+use_collision = true
+
+[node name="TerrenoPasto" type="CSGBox3D" parent="01_PisosYLosas" unique_id=2121377363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -0.075, 4.5)
+size = Vector3(14, 0.15, 18)
+material = SubResource("StandardMaterial3D_bnup0")
+
+[node name="AccesoPeatonal" type="CSGBox3D" parent="01_PisosYLosas" unique_id=843053403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 0, -2.25)
+size = Vector3(1.3999999, 0.04, 4.5)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="HuellaAuto" type="CSGBox3D" parent="01_PisosYLosas" unique_id=1457753002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.200001, 0, -2.25)
+size = Vector3(2.8000002, 0.04, 4.5)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="PeldañoEntrada" type="CSGBox3D" parent="01_PisosYLosas" unique_id=1109979957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 0.075, -0.3)
+size = Vector3(1.6000001, 0.15, 0.6)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="RadierCasa1P" type="CSGBox3D" parent="01_PisosYLosas" unique_id=1093323212]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.075, 4.5)
+size = Vector3(10, 0.15, 9)
+material = SubResource("StandardMaterial3D_jnmqt")
+
+[node name="PisoCeramicoServicios1P" type="CSGBox3D" parent="01_PisosYLosas" unique_id=1026902103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.9, 0.14750001, 4.5)
+size = Vector3(3.8000002, 0.015000001, 8.6)
+material = SubResource("StandardMaterial3D_syofv")
+
+[node name="RadierLoggia" type="CSGBox3D" parent="01_PisosYLosas" unique_id=1466235743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8, 0.06, 7.2)
+size = Vector3(1.6000004, 0.12, 3.6)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="TerrazaPatio" type="CSGBox3D" parent="01_PisosYLosas" unique_id=2087237797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.05, 9.9)
+size = Vector3(5, 0.1, 1.8000002)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="LosaEntrepiso2P" type="CSGBox3D" parent="01_PisosYLosas" unique_id=2118304350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.875, 4.5)
+size = Vector3(10, 0.25, 9)
+material = SubResource("StandardMaterial3D_jnmqt")
+
+[node name="HuecoCajaEscalera" type="CSGBox3D" parent="01_PisosYLosas" unique_id=868819380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.075001, 2.875, 3.05)
+operation = 2
+size = Vector3(1.4499998, 0.3499999, 3.1)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="02_MurosPrimerPiso" type="CSGCombiner3D" parent="." unique_id=1281175471]
+use_collision = true
+
+[node name="MuroCortafuegoOeste_1P" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1242858440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 1.45, 4.5)
+size = Vector3(0.2, 2.6, 9)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="MuroCortafuegoOeste_1P2" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1522501185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 1.45, 4.5)
+size = Vector3(0.2, 2.6, 9)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="FachadaNorteFrontal_1P" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=292932264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 1.45, 0.1)
+size = Vector3(9.8, 2.6, 0.2)
+material = SubResource("StandardMaterial3D_ifodh")
+
+[node name="FachadaSurPatio_1P" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1333205883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 1.45, 8.9)
+size = Vector3(9.8, 2.6, 0.19999981)
+material = SubResource("StandardMaterial3D_ifodh")
+
+[node name="FachadaEsteDerecha_1P" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1787283919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.9, 1.45, 4.5)
+size = Vector3(0.19999981, 2.6, 8.6)
+material = SubResource("StandardMaterial3D_ifodh")
+
+[node name="TabiqueCentral_1P" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1361252130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1.45, 4.5)
+size = Vector3(0.119999886, 2.6, 8.6)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiqueSurBanoVisitas" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1514945481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.205, 1.45, 3)
+size = Vector3(2.2900004, 2.6, 0.119999886)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiqueCostadoEscalera_1P" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=264852412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.309999, 1.45, 1.9)
+size = Vector3(0.119999886, 2.6, 3.3999999)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiqueNorteCocina" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1376682800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.9300003, 1.45, 5.4)
+size = Vector3(3.7400002, 2.6, 0.119999886)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="LoggiaMuroNorte" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1692493795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8, 1.31, 5.46)
+size = Vector3(1.6000004, 2.38, 0.119999886)
+material = SubResource("StandardMaterial3D_ifodh")
+
+[node name="LoggiaMuroEste" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1607071092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.54, 1.31, 7.2)
+size = Vector3(0.12000084, 2.38, 3.3600001)
+material = SubResource("StandardMaterial3D_ifodh")
+
+[node name="LoggiaMuroSur" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=129811506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8, 1.31, 8.940001)
+size = Vector3(1.6000004, 2.38, 0.119999886)
+material = SubResource("StandardMaterial3D_ifodh")
+
+[node name="Vano_P1_AccesoPrincipal" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=972944750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 1.225, 0.10000001)
+operation = 2
+size = Vector3(1, 2.1499999, 0.4)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_PorticoHallEscalera" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=530485731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1.25, 3.9)
+operation = 2
+size = Vector3(0.39999962, 2.1999998, 1.3000002)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_ArcoComedorCocina" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=2107324133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1.25, 7)
+operation = 2
+size = Vector3(0.39999962, 2.1999998, 1.3999996)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_PasoHallCocina" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1682726616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.075, 1.225, 5.3999996)
+operation = 2
+size = Vector3(0.9500003, 2.1499999, 0.4000001)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_P2_BanoVisitas" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1754130182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.075, 1.2, 3)
+operation = 2
+size = Vector3(0.8499999, 2.1, 0.4000001)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_P3_CocinaLoggia" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=920438877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.9, 1.2, 6.45)
+operation = 2
+size = Vector3(0.40000057, 2.1, 0.9000001)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_P4_LoggiaPatio" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=981963589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8, 1.17, 8.95)
+operation = 2
+size = Vector3(0.8999996, 2.1000001, 0.39999962)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V1_LivingFrontal" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=2087968011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 1.5, 0.10000001)
+operation = 2
+size = Vector3(1.4, 1.5999999, 0.4)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V2_VentanalPatio" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=977012933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 1.225, 8.9)
+operation = 2
+size = Vector3(3.6, 2.1499999, 0.40000057)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V3_BanoVisitas" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=481772201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1499996, 2, 0.10000001)
+operation = 2
+size = Vector3(0.9000001, 0.5999999, 0.4)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_VCocina_Patio" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=1952072429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 1.75, 8.9)
+operation = 2
+size = Vector3(2, 1.0999999, 0.40000057)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_CelosiaLoggia" type="CSGBox3D" parent="02_MurosPrimerPiso" unique_id=667176403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.55, 1.7, 7.15)
+operation = 2
+size = Vector3(0.39999962, 1.1, 2.6999998)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="03_MurosSegundoPiso" type="CSGCombiner3D" parent="." unique_id=609808657]
+use_collision = true
+
+[node name="MuroCortafuegoOeste_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1767805038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 4.2, 4.5)
+size = Vector3(0.2, 2.4, 9)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="FachadaNorteFrontal_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1393386168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 4.2, 0.08)
+size = Vector3(9.8, 2.4, 0.16)
+material = SubResource("StandardMaterial3D_nqpop")
+
+[node name="FachadaSurPatio_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=622068243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 4.2, 8.92)
+size = Vector3(9.8, 2.4, 0.15999985)
+material = SubResource("StandardMaterial3D_nqpop")
+
+[node name="FachadaEsteDerecha_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=5227765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.92, 4.2, 4.5)
+size = Vector3(0.15999985, 2.4, 8.68)
+material = SubResource("StandardMaterial3D_nqpop")
+
+[node name="TabiquePasilloOeste_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1095498275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 4.2, 4.5)
+size = Vector3(0.12000036, 2.4, 8.68)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiquePasilloEste_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=508363752]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6, 4.2, 5.17)
+size = Vector3(0.119999886, 2.4, 7.34)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiqueDivDormsOeste_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=216639711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1699998, 4.2, 4.5)
+size = Vector3(3.9399998, 2.4, 0.119999886)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiqueNorteBanoPpal_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1647440910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.945, 4.2, 1.5)
+size = Vector3(2.8100004, 2.4, 0.119999886)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiqueBanoEscalera_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1182921230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29, 4.2, 3.05)
+size = Vector3(0.12000084, 2.4, 3.1)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="TabiqueNorteDorm3_2P" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=565647229]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.75, 4.2, 4.6)
+size = Vector3(4.1800003, 2.4, 0.119999886)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_P5_Dorm1" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1646932409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 4.05, 2.45)
+operation = 2
+size = Vector3(0.4000001, 2.1, 0.9000001)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_P6_Dorm2" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=823643014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 4.05, 5.95)
+operation = 2
+size = Vector3(0.4000001, 2.1, 0.9000001)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_P7_BanoPpal" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=875450977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6000004, 4.05, 3.025)
+operation = 2
+size = Vector3(0.4000001, 2.1, 0.85000014)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_P8_Dorm3" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1498038792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6000004, 4.05, 5.95)
+operation = 2
+size = Vector3(0.4000001, 2.1, 0.9000001)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V4_Dorm1" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=2013589468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 4.45, 0.10000001)
+operation = 2
+size = Vector3(2, 1.2000003, 0.4)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V8_PasilloNorte" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=2044195232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8999996, 4.45, 0.10000001)
+operation = 2
+size = Vector3(0.9000001, 1.2000003, 0.4)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V9_Desembarco" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1825907989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 4.45, 0.10000001)
+operation = 2
+size = Vector3(2, 1.2000003, 0.4)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_VEscaleraEste" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1793238663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.9, 4.15, 3)
+operation = 2
+size = Vector3(0.40000057, 1.5, 1.5999999)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V5_Dorm2" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1249057058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 4.45, 8.9)
+operation = 2
+size = Vector3(2, 1.2000003, 0.40000057)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V10_PasilloSur" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1528067980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8999996, 4.45, 8.9)
+operation = 2
+size = Vector3(0.9000001, 1.2000003, 0.40000057)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="Vano_V6_Dorm3" type="CSGBox3D" parent="03_MurosSegundoPiso" unique_id=1886906409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 4.45, 8.9)
+operation = 2
+size = Vector3(2, 1.2000003, 0.40000057)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="04_TechoYCubierta" type="CSGCombiner3D" parent="." unique_id=783087070]
+use_collision = true
+
+[node name="CieloRaso2P" type="CSGBox3D" parent="04_TechoYCubierta" unique_id=529015227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.45, 4.5)
+size = Vector3(10, 0.099999905, 9)
+material = SubResource("StandardMaterial3D_pmnlw")
+
+[node name="CubiertaPrincipalZinc" type="CSGPolygon3D" parent="04_TechoYCubierta" unique_id=615153236]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.133328, 0.14114189, 8.779619)
+polygon = PackedVector2Array(-0.45, 5.45, 4.5, 6.75, 9.45, 5.45)
+depth = 10.35
+material = SubResource("StandardMaterial3D_x04bp")
+
+[node name="TechoLoggia" type="CSGBox3D" parent="04_TechoYCubierta" unique_id=1179387335]
+transform = Transform3D(0.99026805, 0.1391731, 0, -0.1391731, 0.99026805, 0, 0, 0, 1, 10.85, 2.58, 7.2)
+size = Vector3(1.85, 0.1, 3.8)
+material = SubResource("StandardMaterial3D_x04bp")
+
+[node name="TechoPorcheEntrada" type="CSGBox3D" parent="04_TechoYCubierta" unique_id=792468294]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 2.615, -0.52500004)
+size = Vector3(2.2, 0.13000011, 1.15)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="PilarPorcheIzq" type="CSGBox3D" parent="04_TechoYCubierta" unique_id=856681272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.96, 1.275, -0.94)
+size = Vector3(0.120000005, 2.55, 0.120000005)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="PilarPorcheDer" type="CSGBox3D" parent="04_TechoYCubierta" unique_id=1901101279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8400002, 1.275, -0.94)
+size = Vector3(0.120000124, 2.55, 0.120000005)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="05_SistemaEscalera" type="Node3D" parent="." unique_id=52642887]
+
+[node name="PeldanosYBarandaVisual" type="CSGCombiner3D" parent="05_SistemaEscalera" unique_id=870527139]
+
+[node name="Peldano_01" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=693778305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 0.2190625, 4.39625)
+size = Vector3(1.3999996, 0.218125, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_02" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=1141031521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 0.39718753, 4.20875)
+size = Vector3(1.3999996, 0.21812502, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_03" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=953540683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 0.5753125, 4.02125)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_04" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=1787159027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 0.7534375, 3.83375)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_05" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=816538077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 0.9315625, 3.64625)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_06" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=348124716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 1.1096876, 3.45875)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_07" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=902111102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 1.2878125, 3.27125)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_08" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=2058938524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 1.4659375, 3.08375)
+size = Vector3(1.3999996, 0.2181251, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_09" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=1314304988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 1.6440625, 2.89625)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_10" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=1095329476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 1.8221874, 2.70875)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_11" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=205929375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 2.0003126, 2.52125)
+size = Vector3(1.3999996, 0.21812499, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_12" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=575916045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 2.1784375, 2.33375)
+size = Vector3(1.3999996, 0.21812487, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_13" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=182700349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 2.3565626, 2.14625)
+size = Vector3(1.3999996, 0.2181251, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_14" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=1124743480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 2.5346875, 1.95875)
+size = Vector3(1.3999996, 0.21812487, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_15" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=31527658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 2.7128124, 1.77125)
+size = Vector3(1.3999996, 0.2181251, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="Peldano_16" type="CSGBox3D" parent="05_SistemaEscalera/PeldanosYBarandaVisual" unique_id=659401458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08, 2.8909373, 1.58375)
+size = Vector3(1.3999996, 0.2181251, 0.20749998)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="ColisionRampaExacta" type="StaticBody3D" parent="05_SistemaEscalera" unique_id=1234322155]
+
+[node name="ConvexRampShape" type="CollisionShape3D" parent="05_SistemaEscalera/ColisionRampaExacta" unique_id=126977093]
+shape = SubResource("ConvexPolygonShape3D_8w5jh")
+
+[node name="06_CarpinteriaYExterior" type="Node3D" parent="." unique_id=239590707]
+
+[node name="MarcosYVidriosSinColision" type="CSGCombiner3D" parent="06_CarpinteriaYExterior" unique_id=1596675739]
+
+[node name="Ventana_V1_Living_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=402402522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 1.5, 0.1)
+size = Vector3(1.4, 1.5999999, 0.10000001)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V1_Living_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=100030533]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 0.67999995, 0.1)
+size = Vector3(1.5, 0.07999998, 0.22000001)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_V3_Bano1P_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=1054727870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1499996, 2, 0.1)
+size = Vector3(0.9000001, 0.5999999, 0.10000001)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V3_Bano1P_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=937210037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1499996, 1.6800001, 0.1)
+size = Vector3(1.0000005, 0.07999992, 0.22000001)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_V4_Dorm1_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=156615869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 4.45, 0.08)
+size = Vector3(2, 1.2000003, 0.08)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V4_Dorm1_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=957313628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 3.83, 0.08)
+size = Vector3(2.1, 0.07999992, 0.19999999)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_V8_Pasillo_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=1156789860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8999996, 4.45, 0.08)
+size = Vector3(0.9000001, 1.2000003, 0.08)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V8_Pasillo_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=184098099]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8999996, 3.83, 0.08)
+size = Vector3(1.0000005, 0.07999992, 0.19999999)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_V9_Escalera_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=215669598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 4.45, 0.08)
+size = Vector3(2, 1.2000003, 0.08)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V9_Escalera_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=43779188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 3.83, 0.08)
+size = Vector3(2.1000004, 0.07999992, 0.19999999)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_VCocina_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=1990997683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 1.75, 8.9)
+size = Vector3(2, 1.0999999, 0.09999943)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_VCocina_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=457523316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 1.1800001, 8.9)
+size = Vector3(2.1000004, 0.07999992, 0.22000027)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_V5_Dorm2_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=1243381602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 4.45, 8.91)
+size = Vector3(2, 1.2000003, 0.10000038)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V5_Dorm2_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=41634286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 3.83, 8.91)
+size = Vector3(2.1, 0.07999992, 0.22000122)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_V10_PasilloSur_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=5729006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8999996, 4.45, 8.91)
+size = Vector3(0.9000001, 1.2000003, 0.10000038)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V10_PasilloSur_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=1328050723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8999996, 3.83, 8.91)
+size = Vector3(1.0000005, 0.07999992, 0.22000122)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="Ventana_V6_Dorm3_Vidrio" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=1080563585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 4.45, 8.91)
+size = Vector3(2, 1.2000003, 0.10000038)
+material = SubResource("StandardMaterial3D_xannx")
+
+[node name="Ventana_V6_Dorm3_Alfeizar" type="CSGBox3D" parent="06_CarpinteriaYExterior/MarcosYVidriosSinColision" unique_id=1175490325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 3.83, 8.91)
+size = Vector3(2.1000004, 0.07999992, 0.22000122)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="RejaYPanderetasColision" type="CSGCombiner3D" parent="06_CarpinteriaYExterior" unique_id=1749266251]
+use_collision = true
+
+[node name="PanderetaOeste" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=1094675597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 1.05, 4.5)
+size = Vector3(0.2, 2.1, 17)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="PanderetaEste" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=2020871940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1, 1.05, 4.5)
+size = Vector3(0.19999981, 2.1, 17)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="PanderetaFondoPatio" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=1831891054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1.05, 12.9)
+size = Vector3(12.4, 2.1, 0.19999981)
+material = SubResource("StandardMaterial3D_8jx0w")
+
+[node name="ZocaloRejaIzq" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=119094748]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.225, -3.9750001)
+size = Vector3(2.2, 0.45, 0.1500001)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="ZocaloRejaDer" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=563552055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 0.225, -3.9750001)
+size = Vector3(8.4, 0.45, 0.1500001)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="PilarReja1" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=106425138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0.95, -3.975)
+size = Vector3(0.20000005, 1.9, 0.25)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="PilarReja2" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=2139120307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.65, 0.95, -3.975)
+size = Vector3(0.20000005, 1.9, 0.25)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="PilarReja3" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=2116598757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.75, 0.95, -3.975)
+size = Vector3(0.19999981, 1.9, 0.25)
+material = SubResource("StandardMaterial3D_6pymx")
+
+[node name="BarrotesSuperioresIzq" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=1636646122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.025, 1.125, -3.975)
+size = Vector3(2.05, 1.3499999, 0.049999952)
+material = SubResource("StandardMaterial3D_en5md")
+
+[node name="BarrotesSuperioresDer" type="CSGBox3D" parent="06_CarpinteriaYExterior/RejaYPanderetasColision" unique_id=2070000108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.875, 1.125, -3.975)
+size = Vector3(8.25, 1.3499999, 0.049999952)
+material = SubResource("StandardMaterial3D_en5md")
+
+[node name="07_MobiliarioBase" type="CSGCombiner3D" parent="." unique_id=2143796686]
+use_collision = true
+
+[node name="SofaPrincipal" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=28957467]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.84999996, 0.55, 2.6)
+size = Vector3(0.9, 0.79999995, 2.4)
+material = SubResource("StandardMaterial3D_vsp2p")
+
+[node name="MesaCentroLiving" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=242698608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1999998, 0.375, 2.6)
+size = Vector3(0.79999995, 0.45000002, 1.2)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="EstufaChilena" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=253621088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0.746521, 2.1)
+size = Vector3(0.6000004, 1.193042, 0.60000014)
+material = SubResource("StandardMaterial3D_en5md")
+
+[node name="MesaComedor" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=974725988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 0.54, 6.7)
+size = Vector3(1.8, 0.78, 1.7999997)
+material = SubResource("StandardMaterial3D_gv507")
+
+[node name="MesonCocinaSur" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=1668112101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.975, 0.59999996, 8.465)
+size = Vector3(3.5500002, 0.9, 0.6300001)
+material = SubResource("StandardMaterial3D_vsp2p")
+
+[node name="Cocina4Platos" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=898806294]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.425, 0.61, 7.5)
+size = Vector3(0.6499996, 0.9200001, 0.8000002)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="Refrigerador" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=1687446743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.177169, 1.0500001, 5.9)
+size = Vector3(0.66252446, 1.8000001, 0.6999998)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="TableroElectricoTDA" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=907686553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22, 1.75, 3.35)
+size = Vector3(0.07999992, 0.5, 0.39999986)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="CalefontLoggia" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=1935146563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.135, 1.7, 7.525)
+size = Vector3(0.22999954, 0.6999999, 0.4499998)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="BalonGas15Kg" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=1791835964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.35, 0.485, 8.3)
+size = Vector3(0.40000057, 0.73, 0.39999962)
+material = SubResource("StandardMaterial3D_165kh")
+
+[node name="Lavamanos1P" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=985844930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0.575, 1.5)
+size = Vector3(0.5, 0.85, 0.5999999)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="WC_1P" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=1476554036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.775, 0.525, 0.625)
+size = Vector3(0.5500002, 0.75, 0.65)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="TinaBano2P" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=753074262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.85, 3.275, 2.4)
+size = Vector3(0.6999998, 0.54999995, 1.6)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="Lavamanos2P" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=523402978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6499996, 3.425, 1.875)
+size = Vector3(0.9000001, 0.8499999, 0.5500001)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="WC_2P" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=658568587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7250004, 3.375, 4.025)
+size = Vector3(0.6500001, 0.75, 0.64999986)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="CamaMatrimonial_Dorm1" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=1966830627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 3.3, 2.1)
+size = Vector3(2, 0.5999999, 1.6000001)
+material = SubResource("StandardMaterial3D_oyack")
+
+[node name="Escritorio_Dorm3" type="CSGBox3D" parent="07_MobiliarioBase" unique_id=1174403223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8999996, 3.375, 8.45)
+size = Vector3(1.4000001, 0.75, 0.6000004)
+material = SubResource("StandardMaterial3D_x703t")
+
+[node name="BedSingle" type="MeshInstance3D" parent="07_MobiliarioBase" unique_id=846426363]
+transform = Transform3D(-0.10815762, 0, -1.9970732, 0, 2, 0, 1.9970732, 0, -0.10815762, 2.4093366, 2.9516118, 8.089345)
+mesh = ExtResource("2_jnmqt")
+
+[node name="08_PuntosInspeccionYSpawn" type="Node3D" parent="." unique_id=2144090853]
+
+[node name="SpawnJugador_Antejardin" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=728693184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 0.2, -2.5)
+gizmo_extents = 0.4
+
+[node name="Riesgo_1P_Living_EstufaEncendida" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=769156147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0.85, 2.1)
+gizmo_extents = 0.4
+
+[node name="Riesgo_1P_Hall_TableroElectricoAbierto" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=1510545041]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1, 1.6, 3.35)
+gizmo_extents = 0.4
+
+[node name="Riesgo_1P_BanoVisitas_FugaFlexible" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=1894366924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0.55, 1.5)
+gizmo_extents = 0.4
+
+[node name="Riesgo_1P_Cocina_QuemadorSinSupervision" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=1818946945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.4, 1.15, 7.5)
+gizmo_extents = 0.4
+
+[node name="Riesgo_1P_Loggia_CalefontSinDucto" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=1655108296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 1.75, 7.5)
+gizmo_extents = 0.4
+
+[node name="Riesgo_1P_Loggia_MangueraGasVencida" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=751209880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.35, 0.65, 8.3)
+gizmo_extents = 0.4
+
+[node name="Riesgo_2P_Escalera_ObjetoEnPeldano" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=1089632530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.1, 1.65, 2.95)
+gizmo_extents = 0.4
+
+[node name="Riesgo_2P_Dorm1_AlargadorSobrecargado" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=98307216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 3.25, 0.5)
+gizmo_extents = 0.4
+
+[node name="Riesgo_2P_BanoPpal_SecadorJuntoATina" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=1741426666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4, 3.7, 2.2)
+gizmo_extents = 0.4
+
+[node name="Riesgo_2P_Dorm2_CortinaSobreCalefactor" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=253992989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 3.6, 8.6)
+gizmo_extents = 0.4
+
+[node name="Riesgo_2P_Dorm3_BateriaLitioEnCama" type="Marker3D" parent="08_PuntosInspeccionYSpawn" unique_id=1053257687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.7, 3.7, 6.8)
+gizmo_extents = 0.4
+
+[node name="BedSingle" type="MeshInstance3D" parent="." unique_id=603983009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.46032, 3.1653972, 6.4306426)
+mesh = ExtResource("2_jnmqt")
+
+[node name="InspectorPlayer" type="CharacterBody3D" parent="." unique_id=941358531]
+script = ExtResource("3_syofv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=639093771]
+transform = Transform3D(1, 0, 0, 0, -0.59201324, 0.80592823, 0, -0.80592823, -0.59201324, 4.3055725, 8.089879, -4.6675725)
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=641157848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8806148, 2.44885, 4.1793113)
+light_color = Color(1, 1, 0.85490197, 1)
+light_energy = 6.383
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=236826205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4072.1309, 235.36038, -26894.996)
+light_color = Color(1, 1, 0.85490197, 1)
+shadow_enabled = true
+omni_range = 4.6042924
